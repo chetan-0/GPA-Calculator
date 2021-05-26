@@ -2,13 +2,15 @@
 function createInputFields()
 {
     let n=document.getElementById("n").value;
-    for(let a=1;a<=n;a++)
+    document.getElementById("Enter").innerHTML="<h1>Enter the grades and the credits</h1>"
+    for(let i=1;i<=n;i++)
     {
         let list=document.createElement("SELECT")
-        list.setAttribute("id","list")
+        list.setAttribute("id","list"+i)
 
         let GRADE=document.createElement("OPTION")
         let grade=document.createTextNode("Grades")
+        GRADE.setAttribute("value","0")
         GRADE.appendChild(grade)
         list.appendChild(GRADE)
 
@@ -68,7 +70,93 @@ function createInputFields()
         N.appendChild(n)
         list.appendChild(N)
 
+        let List=document.createElement('SELECT')
+        List.setAttribute("id","List"+i)
+
+
+        let CREDITS=document.createElement("OPTION")
+        let credits=document.createTextNode("Credits")
+        CREDITS.setAttribute("value","0")
+        CREDITS.appendChild(credits)
+        List.appendChild(CREDITS)
+
+        
+        let C1=document.createElement("OPTION")
+        let c1=document.createTextNode("1")
+        C1.setAttribute("id","C1")
+        C1.setAttribute("value","1")
+        C1.appendChild(c1)
+        List.appendChild(C1)
+
+        
+        let C2=document.createElement("OPTION")
+        let c2=document.createTextNode("2")
+        C2.setAttribute("id","C2")
+        C2.setAttribute("value","2")
+        C2.appendChild(c2)
+        List.appendChild(C2)
+
+        
+        let C3=document.createElement("OPTION")
+        let c3=document.createTextNode("3")
+        C3.setAttribute("id","C3")
+        C3.setAttribute("value","3")
+        C3.appendChild(c3)
+        List.appendChild(C3)
+
+        
+        let C4=document.createElement("OPTION")
+        let c4=document.createTextNode("4")
+        C4.setAttribute("id","C4")
+        C4.setAttribute("value","4")
+        C4.appendChild(c4)
+        List.appendChild(C4)
+
+        
+        let C5=document.createElement("OPTION")
+        let c5=document.createTextNode("5")
+        C5.setAttribute("id","C5")
+        C5.setAttribute("value","5")
+        C5.appendChild(c5)
+        List.appendChild(C5)
+        
         document.body.appendChild(list)
 
+        document.body.appendChild(List)
     }
+    let br=document.createElement("BR")
+    document.body.appendChild(br)
+    pass()
+}
+
+function pass()
+{
+    let Btn=document.createElement("BUTTON")
+    let t=document.createTextNode("Submit")
+    Btn.appendChild(t)
+    Btn.setAttribute("type","submit")
+    Btn.setAttribute("id","Button2")
+    Btn.setAttribute("onclick","calculation()")
+    document.body.appendChild(Btn)
+}
+
+function calculation()
+{
+    let n=document.getElementById("n").value;
+    let grades=[],credits=[],sum=0,totalCredits=0,GPA;
+
+    for(let i=1;i<=n;i++)
+    grades[i]=document.getElementById("list"+i).value
+
+    for(let j=1;j<=n;j++)
+    credits[j]=document.getElementById("List"+j).value
+    
+    for(i=1;i<=n;i++)
+    {
+        sum+=(credits[i]*grades[i])
+        totalCredits+=parseInt(credits[i])
+    }
+    GPA=sum/totalCredits
+    x=document.createTextNode(GPA)
+    document.body.appendChild(x)
 }
