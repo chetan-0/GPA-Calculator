@@ -158,7 +158,7 @@ function calculation()
         sum+=(credits[i]*grades[i])
         totalCredits+=parseInt(credits[i])
     }
-    GPA=sum/totalCredits
+    GPA=sum/totalCredits.toFixed(2)
     // x=document.createTextNode(GPA)
     // document.body.appendChild(x)
     document.getElementById("answer").innerText= GPA;
