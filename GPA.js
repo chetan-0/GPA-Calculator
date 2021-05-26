@@ -120,12 +120,12 @@ function createInputFields()
         C5.appendChild(c5)
         List.appendChild(C5)
         
-        document.body.appendChild(list)
+        document.getElementById("Enter").appendChild(list)
 
-        document.body.appendChild(List)
+        document.getElementById("Enter").appendChild(List)
     }
     let br=document.createElement("BR")
-    document.body.appendChild(br)
+    document.getElementById("Enter").appendChild(br)
     pass()
 }
 
@@ -137,7 +137,7 @@ function pass()
     Btn.setAttribute("type","submit")
     Btn.setAttribute("id","Button2")
     Btn.setAttribute("onclick","calculation()")
-    document.body.appendChild(Btn)
+    document.getElementById("Enter").appendChild(Btn)
 }
 
 function calculation()
@@ -157,6 +157,7 @@ function calculation()
         totalCredits+=parseInt(credits[i])
     }
     GPA=sum/totalCredits
-    x=document.createTextNode(GPA)
-    document.body.appendChild(x)
+    // x=document.createTextNode(GPA)
+    // document.body.appendChild(x)
+    document.getElementById("answer").innerText= GPA;
 }
