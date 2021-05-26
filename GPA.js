@@ -1,6 +1,7 @@
 
 function createInputFields()
 {
+    document.getElementById("Button1").style.display="none"
     let n=document.getElementById("n").value;
     document.getElementById("Enter").innerHTML="<h1>Enter the grades and the credits</h1>"
     for(let i=1;i<=n;i++)
@@ -142,6 +143,7 @@ function pass()
 
 function calculation()
 {
+    document.getElementById("Button2").style.display="none"
     let n=document.getElementById("n").value;
     let grades=[],credits=[],sum=0,totalCredits=0,GPA;
 
