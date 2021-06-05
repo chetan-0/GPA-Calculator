@@ -1,7 +1,7 @@
-
 function createInputFields()
 {
-    document.getElementById("Button1").style.display="none"
+    document.getElementById("Button1").addEventListener("submit",(e1)=>{
+        e1.preventDefault();})
     let n=document.getElementById("n").value;
     document.getElementById("Enter").innerHTML="<h1>Enter the grades and the credits</h1>"
     for(let i=1;i<=n;i++)
@@ -143,7 +143,8 @@ function pass()
 
 function calculation()
 {
-    document.getElementById("Button2").style.display="none"
+    document.getElementById("Button2").addEventListener("submit",(e2)=>{
+        e2.preventDefault();})
     let n=document.getElementById("n").value;
     let grades=[],credits=[],sum=0,totalCredits=0,GPA;
 
@@ -158,7 +159,8 @@ function calculation()
         sum+=(credits[i]*grades[i])
         totalCredits+=parseInt(credits[i])
     }
-    GPA=sum/totalCredits.toFixed(2)
+    GPA=sum/totalCredits
+    GPA=GPA.toFixed(2)
     // x=document.createTextNode(GPA)
     // document.body.appendChild(x)
     document.getElementById("answer").innerText= GPA;
