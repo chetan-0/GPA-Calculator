@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css" >
+    <title>GPA-Calculator</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><span style = "margin: 20px"><a class="navbar-brand" href="#"><img src="https://www.vitrendz.tech/CSS/image/logo.png" height="28" alt = "V">ITrendz</a></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">GPA Calculator <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CGPA.html">CGPA Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quick CGPA Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Predict Marks</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="Input-field"><input type="number" id="n1" placeholder="Enter Credits till last sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n2" placeholder="Enter CGPA till last sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n3" placeholder="Enter Credits in the current sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n4" placeholder="Enter the GPA this sem" ></div><br>
+        </form>
+        <button type="submit" id="Button3" onclick="CGPACalc()" >Submit</button>
+    </div>
+
+    <script src="GPA.js" charset="UTF-8"></script>
+
+    <h3><div id="FinalCGPA"></div></h3> 
+
+</body>
+
+</html>
+<!-- <img src="https://www.vitrendz.tech/CSS/image/logo.png" height="28" alt="V">ITrendz</a></span></a> -->
