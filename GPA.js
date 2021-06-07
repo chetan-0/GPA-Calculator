@@ -1,7 +1,8 @@
 function createInputFields()
 {
-    document.getElementById("Button1").addEventListener("submit",(e1)=>{
-        e1.preventDefault();})
+    document.getElementById("n").addEventListener("keypress", (e) => {
+        if(e.key=="Enter")
+        e.preventDefault();})
     let n=document.getElementById("n").value;
     document.getElementById("Enter").innerHTML="<h1>Enter the grades and the credits</h1>"
     for(let i=1;i<=n;i++)
@@ -137,11 +138,11 @@ function pass()
     Btn.appendChild(t)
     Btn.setAttribute("type","submit")
     Btn.setAttribute("id","Button2")
-    Btn.setAttribute("onclick","calculation()")
+    Btn.setAttribute("onclick","GPACalc()")
     document.getElementById("Enter").appendChild(Btn)
 }
 
-function calculation()
+function GPACalc()
 {
     document.getElementById("Button2").addEventListener("submit",(e2)=>{
         e2.preventDefault();})
@@ -159,9 +160,19 @@ function calculation()
         sum+=(credits[i]*grades[i])
         totalCredits+=parseInt(credits[i])
     }
-    GPA=sum/totalCredits
-    GPA=GPA.toFixed(2)
+    GPA=(sum/totalCredits).toFixed(2)
     // x=document.createTextNode(GPA)
     // document.body.appendChild(x)
     document.getElementById("answer").innerText= GPA;
+}
+
+function CGPACalc()
+{
+    let a = parseFloat(document.getElementById("n1").value);
+    let b = parseFloat(document.getElementById("n2").value);
+    let c = parseFloat(document.getElementById("n3").value);
+    let d = parseFloat(document.getElementById("n4").value);
+
+    let CGPA = (((a*b)+(c*d))/(a+c)).toFixed(2)
+    document.getElementById("FinalCGPA").innerText= CGPA;
 }
