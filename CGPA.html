@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,19 +37,17 @@
     </nav>
     <div class="container">
         <form>
-            <div class="Input-field"><input type="number" id="n1" placeholder="Enter Credits till last sem" ></div>
+            <div class="Input-field"><input type="number" id="n1" placeholder="Enter Credits till last sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n2" placeholder="Enter CGPA till last sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n3" placeholder="Enter Credits in the current sem" ></div><br>
+            <div class="Input-field"><input type="number" id="n4" placeholder="Enter the GPA this sem" ></div><br>
         </form>
-        <button type="submit" id="Button1" onclick="createInputFields()" >Submit</button>
+        <button type="submit" id="Button3" onclick="CGPACalc()" >Submit</button>
     </div>
-
-
 
     <script src="GPA.js" charset="UTF-8"></script>
 
-    <div id="Enter"></div>
-
-    <div id="SubmitBtn"></div>
-    <h3><div id="answer"></div></h3> 
+    <h3><div id="FinalCGPA"></div></h3> 
 
 </body>
 
