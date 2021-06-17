@@ -176,3 +176,13 @@ function CGPACalc()
     let CGPA = (((a*b)+(c*d))/(a+c)).toFixed(2)
     document.getElementById("FinalCGPA").innerText= CGPA;
 }
+
+// $(function () {
+//     $(window).on('scroll', function () {
+//         if ( $(window).scrollTop() > 10 ) {
+//             $('.navbar').addClass('active');
+//         } else {
+//             $('.navbar').removeClass('active');
+//         }
+//     });
+// });
