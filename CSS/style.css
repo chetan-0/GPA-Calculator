@@ -10,8 +10,10 @@
 }
 .block {
 	display : flex;
-	background-color: #141464;
-	height: 40%;
+	background-color: #005792;
+    flex-direction: column;
+    justify-content: space-around;
+	height: 250px;
 	width: 30%;
 	position: relative;
 	left : 35%;
