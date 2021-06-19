@@ -8,6 +8,7 @@ function createInputFields() {
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
         list.setAttribute("id", "list" + i)
+        list.setAttribute("class","list1")
 
         let GRADE = document.createElement("OPTION")
         let grade = document.createTextNode("Grades")
@@ -73,6 +74,7 @@ function createInputFields() {
 
         let List = document.createElement('SELECT')
         List.setAttribute("id", "List" + i)
+        List.setAttribute("class","list2")
 
 
         let CREDITS = document.createElement("OPTION")
@@ -210,7 +212,7 @@ function TotalCGPACalc() {
     } 
     else if (marksLab && !marksProj) { 
         choice = 2; 
-    } 
+    }   
     else if (marksProj && !marksLab) { 
         choice = 1; 
     } 
