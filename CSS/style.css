@@ -22,6 +22,20 @@
 	font-weight:  lighter;
 	font-style: italic;
 }
+.block > form{
+    height : 50%;
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.block > button{
+    height: 20%;
+    width: 20%;
+    position: relative;
+    left: 40%;
+}
 
 body{
 	background: linear-gradient(to right, #000046, #1cb5e0);
