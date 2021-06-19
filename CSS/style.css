@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap');
+
 .heading{
 	text-align: center;
 	position: relative;
-	top : 2.5em;
+	top : 1.75em;
 	color: #fff;
+	font-size: 35px;
+	font-weight: regular;
 }
-
-.container {
+.block {
+	display : flex;
+	background-color: #141464;
+	height: 40%;
+	width: 30%;
+	position: relative;
+	left : 35%;
+}
+.block  h1 {
+	font-size: 30px;
 	color : #fff;
+	font-weight:  lighter;
+	font-style: italic;
 }
 
 body{
