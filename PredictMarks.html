@@ -21,45 +21,37 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">GPA Calculator <span class="sr-only"></span></a>
+                    <a class="nav-link" href="index.html">GPA-CALCULATOR (CURRENT) <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="CGPA.html">CGPA Calculator</a>
+                    <a class="nav-link" href="PredictMarks.html">EXPECTED MARKS CALCULATOR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="PredictMarks.html">Predict Marks</a>
+                    <a class="nav-link" href="CGPA.html">CGPA-CALCULATOR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="TotalCGPA.html">All Semester CGPA</a>
+                    <a class="nav-link" href="TotalCGPA.html">ALL SEMESTER CGPA-CALCULATOR</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <form>
-            <div class="Input-field"><input type="number" id="sem1GPA" placeholder="Enter sem 1 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem1credits" placeholder="Enter sem 1 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem2GPA" placeholder="Enter sem 2 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem2credits" placeholder="Enter sem 2 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem3GPA" placeholder="Enter sem 3 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem3credits" placeholder="Enter sem 3 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem4GPA" placeholder="Enter sem 4 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem4credits" placeholder="Enter sem 4 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem5GPA" placeholder="Enter sem 5 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem5credits" placeholder="Enter sem 5 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem6GPA" placeholder="Enter sem 6 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem6credits" placeholder="Enter sem 6 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem7GPA" placeholder="Enter sem 7 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem7credits" placeholder="Enter sem 7 credits" ></div><br>
-            <div class="Input-field"><input type="number" id="sem8GPA" placeholder="Enter sem 8 GPA" ></div><br>
-            <div class="Input-field"><input type="number" id="sem8credits" placeholder="Enter sem 8 credits" ></div><br>
+            <div class="Input-field"><input type="number" id="DA marks" placeholder="Enter internal (DA) marks" ></div><br>
+            <div class="Input-field"><input type="number" id="Lab marks" placeholder="Enter marks for lab component" ></div><br>
+            <div class="Input-field"><input type="number" id="Project marks" placeholder="Enter marks for project component" ></div><br>
+            <div class="Input-field"><input type="number" id="Additional learning marks" placeholder="Enter marks for Additional learning" ></div><br>
+            <div class="Input-field"><input type="number" id="Cat1 marks" placeholder="Enter marks for Cat 1" ></div><br>
+            <div class="Input-field"><input type="number" id="Cat2 marks" placeholder="Enter marks for Cat 2" ></div><br>
+            <div class="Input-field"><input type="number" id="Fat marks" placeholder="Enter marks for Fat" ></div><br>
+            
         </form>
-        <button type="submit" id="Button4" onclick="TotalCGPACalc()" >Submit</button>
+        <button type="submit" id="Button5" onclick="CalcMarks()" >Submit</button>
     </div>
 
     <script src="GPA.js" charset="UTF-8"></script>
 
-    <h3><div id="TotalCGPA"></div></h3> 
+    <h3><div id="PredictMarks"></div></h3> 
 
 </body>
 
