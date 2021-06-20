@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap');
-
 .heading{
 	text-align: center;
 	position: relative;
@@ -22,7 +21,7 @@
 	font-size: 30px;
 	color : #fff;
 	font-weight:  lighter;
-	font-style: italic;
+	text-align:center;
 }
 .block > form{
     height : 50%;
