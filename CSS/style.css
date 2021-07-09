@@ -9,7 +9,6 @@
 }
 .block {
 	display : flex;
-	background-color: #005792;
     flex-direction: column;
     justify-content: space-around;
 	height: 250px;
@@ -36,6 +35,45 @@
     width: 20%;
     position: relative;
     left: 40%;
+}
+
+.predict-block {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+	height: 40%;
+	width: 20%;
+	position: relative;
+	left : 40%;
+    top : 60%;
+}
+
+.cgpa-block {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+	height: 50%;
+	width: 20%;
+	position: relative;
+	left : 40%;
+    top : 60%;
+}
+
+.tcgpa-block {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+	height : 60%;
+	width: 40%;
+	position: relative;
+	left : 30%;
+    top : 20%;
+}
+
+.tcgpa-block > form >  .class-1 {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 body{
@@ -79,6 +117,17 @@ body{
 
 .navbar.active .navbar-brand {
     color: #555;
+}
+
+#GPAPredictor, #PredictMarks, #TotalCGPA, #FinalCGPA, #answer {
+    color : #fff;
+    text-align: center;
+    height : 150px;
+    width : 150px;
+    position: relative;
+    bottom : 20%;
+    left : 45%
+
 }
 
 
