@@ -12,45 +12,43 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><span style = "margin: 20px"><a class="navbar-brand" href="#"><img src="https://www.vitrendz.tech/CSS/image/logo.png" height="28" alt = "V">ITrendz</a></span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">GPA-CALCULATOR (CURRENT) <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="PredictMarks.html">EXPECTED MARKS CALCULATOR</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="CGPA.html">CGPA-CALCULATOR</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="TotalCGPA.html">ALL SEMESTER CGPA-CALCULATOR</a>
-                </li>
-                <li class="nav-item">
-                    <li class="nav-item"><a href="MinGPAPredictor.html" class="nav-link text-uppercase font-weight-bold">GPA-PREDICTOR</a></li>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="https://www.vitrendz.tech/CSS/image/logo.png" height="28" alt="V">ITrendz</a></span></a></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold">GPA-Calculator <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="PredictMarks.html" class="nav-link text-uppercase font-weight-bold">Expected marks-Calculator</a></li>
+                        <li class="nav-item"><a href="CGPA.html" class="nav-link text-uppercase font-weight-bold">CGPA-Calculator</a></li>
+                        <li class="nav-item"><a href="TotalCGPA.html" class="nav-link text-uppercase font-weight-bold">All Semester CGPA-Calculator</a></li>
+                        <li class="nav-item"><a href="MinGPAPredictor.html" class="nav-link text-uppercase font-weight-bold">GPA-PREDICTOR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="heading">Predict Marks</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="predict-block">
         <form>
-            <div class="Input-field"><input type="number" id="DA marks" placeholder="Enter internal (DA) marks" ></div><br>
-            <div class="Input-field"><input type="number" id="Lab marks" placeholder="Enter marks for lab component" ></div><br>
-            <div class="Input-field"><input type="number" id="Project marks" placeholder="Enter marks for project component" ></div><br>
-            <div class="Input-field"><input type="number" id="Additional learning marks" placeholder="Enter marks for Additional learning" ></div><br>
-            <div class="Input-field"><input type="number" id="Cat1 marks" placeholder="Enter marks for Cat 1" ></div><br>
-            <div class="Input-field"><input type="number" id="Cat2 marks" placeholder="Enter marks for Cat 2" ></div><br>
-            <div class="Input-field"><input type="number" id="Fat marks" placeholder="Enter expected marks for Fat" ></div><br>
-            
+            <div class="Input-field"><input type="number" class="form-control"  id="DA marks" placeholder="Enter internal (DA) marks" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Lab marks" placeholder="Enter marks for lab component" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Project marks" placeholder="Enter marks for project component" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Additional learning marks" placeholder="Enter marks for Additional learning" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Cat1 marks" placeholder="Enter marks for Cat 1" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Cat2 marks" placeholder="Enter marks for Cat 2" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control"  id="Fat marks" placeholder="Enter expected marks for Fat" ></div><br>
         </form>
-        <button type="submit" id="Button5" onclick="CalcMarks()" >Submit</button>
+        <button type="submit" id="Button5" class="btn btn-primary btn-sm" onclick="CalcMarks()" >Submit</button>
     </div>
+    <br>
+    <br>
 
     <script src="GPA.js" charset="UTF-8"></script>
 
@@ -59,4 +57,3 @@
 </body>
 
 </html>
-<!-- <img src="https://www.vitrendz.tech/CSS/image/logo.png" height="28" alt="V">ITrendz</a></span></a> -->
