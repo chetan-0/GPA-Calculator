@@ -1,10 +1,7 @@
 function createInputFields() {
-    document.getElementById("n").addEventListener("keypress", (e) => {
-        if (e.key == "Enter")
-            e.preventDefault();
-    })
     let n = document.getElementById("n").value;
     document.getElementById("Enter").innerHTML = "<h1>Enter the grades and the credits</h1>"
+    
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
         list.setAttribute("id", "list" + i)
@@ -240,5 +237,15 @@ function CalcMarks(){
     document.getElementById("PredictMarks").innerText = netMarks;
 }
 
+function PredictMinGPA()
+{
+    let N = parseFloat(document.getElementById("NOOfSem").value);
+    let CreditsTillNow = parseFloat(document.getElementById("creditsTillNow").value);
+    let CGPATillNow = parseFloat(document.getElementById("CGPATillNow").value);
+    let ExpectedCGPA = parseFloat(document.getElementById("ExpectedCGPA").value);
+    let TotNCredits = parseFloat(document.getElementById("TotNCredits").value);
+    let MinGPA = ((ExpectedCGPA*(TotNCredits+CreditsTillNow)-(CreditsTillNow*CGPATillNow))/TotNCredits).toFixed(2)
+    document.getElementById("GPAPredictor").innerText = MinGPA;
+}
 
 

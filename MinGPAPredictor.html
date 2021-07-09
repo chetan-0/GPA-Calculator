@@ -29,19 +29,20 @@
             </div>
         </nav>
     </header>
-    <div class="container5">
+    <div class="container5" >
         <form>
             <div class="Input-field"><input type="number" id="creditsTillNow" placeholder="Enter Credits till last sem" ></div><br>
             <div class="Input-field"><input type="number" id="CGPATillNow" placeholder="Enter CGPA till last sem" ></div><br>
             <div class="Input-field"><input type="number" id="ExpectedCGPA" placeholder="Enter the expected CGPA" ></div><br>
             <div class="Input-field"><input type="number" id="NOOfSem" placeholder="Enter the number of sem" ></div><br>
+            <div class="Input-field"><input type="number" id="TotNCredits" placeholder="Enter total credits in those sems" ></div><br>
         </form>
-        <button type="submit" id="Button3" onclick="CGPACalc()" >Submit</button>
+        <button type="submit" id="Button5" onclick="PredictMinGPA()" >Submit</button>
     </div>
 
     <script src="GPA.js" charset="UTF-8"></script>
-
-    <h3><div id="FinalCGPA"></div></h3> 
+        
+    <h3><div id="GPAPredictor" ></div></h3> 
 
 </body>
 
