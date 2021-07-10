@@ -1,6 +1,6 @@
 function createInputFields() {
     let n = document.getElementById("n").value;
-    document.getElementById("Enter").innerHTML = "<h1>Enter the grades and the credits</h1>"
+    document.getElementById("Enter").innerHTML = "<h1>Enter the grade and the credits</h1>"
     
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
