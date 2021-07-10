@@ -29,18 +29,25 @@
             </div>
         </nav>
     </header>
-    <div class="container5" >
+    <h1 class="heading">GPA Predictor</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="cgpa-block">
         <form>
-            <div class="Input-field"><input type="number" id="creditsTillNow" placeholder="Enter Credits till last sem" ></div><br>
-            <div class="Input-field"><input type="number" id="CGPATillNow" placeholder="Enter CGPA till last sem" ></div><br>
-            <div class="Input-field"><input type="number" id="ExpectedCGPA" placeholder="Enter the expected CGPA" ></div><br>
-            <div class="Input-field"><input type="number" id="NOOfSem" placeholder="Enter the number of sem" ></div><br>
-            <div class="Input-field"><input type="number" id="TotNCredits" placeholder="Enter total credits in those sems" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control" id="creditsTillNow" placeholder="Enter Credits till last sem" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control" id="CGPATillNow" placeholder="Enter CGPA till last sem" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control" id="ExpectedCGPA" placeholder="Enter the expected CGPA" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control" id="NOOfSem" placeholder="Enter the number of sem" ></div><br>
+            <div class="Input-field"><input type="number" class="form-control" id="TotNCredits" placeholder="Enter total credits in those sems" ></div><br>
         </form>
-        <button type="submit" id="Button5" onclick="PredictMinGPA()" >Submit</button>
+        <button type="submit" id="Button5" class="btn btn-primary btn-sm" onclick="PredictMinGPA()" >Submit</button>
     </div>
 
     <script src="GPA.js" charset="UTF-8"></script>
+    <br>
+    <br>
         
     <h3><div id="GPAPredictor" ></div></h3> 
 
