@@ -1,11 +1,11 @@
 function createInputFields() {
     let n = document.getElementById("n").value;
-    document.getElementById("Enter").innerHTML = "<h1>Enter the grades and the credits</h1>"
+    document.getElementById("Enter").innerHTML = "<h1 class = 'heading-1'>Enter Subjects and Credits</h1>"
     
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
         list.setAttribute("id", "list" + i)
-        list.setAttribute("class","list1")
+        list.setAttribute("class","form-select form-select-sm")
 
         let GRADE = document.createElement("OPTION")
         let grade = document.createTextNode("Grades")
@@ -68,10 +68,10 @@ function createInputFields() {
         N.setAttribute("value", "0")
         N.appendChild(n)
         list.appendChild(N)
-
+        
         let List = document.createElement('SELECT')
         List.setAttribute("id", "List" + i)
-        List.setAttribute("class","list2")
+        List.setAttribute("class","form-select form-select-sm")
 
 
         let CREDITS = document.createElement("OPTION")
@@ -135,6 +135,7 @@ function pass() {
     Btn.appendChild(t)
     Btn.setAttribute("type", "submit")
     Btn.setAttribute("id", "Button2")
+    Btn.setAttribute("class","btn btn-primary btn-sm")
     Btn.setAttribute("onclick", "GPACalc()")
     document.getElementById("Enter").appendChild(Btn)
 }
