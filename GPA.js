@@ -2,6 +2,7 @@ function createInputFields() {
     let n = document.getElementById("n").value;
     document.getElementById("Enter").innerHTML = "<h1>Enter the grade and the credits</h1>"
     
+    
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
         list.setAttribute("id", "list" + i)
@@ -126,6 +127,7 @@ function createInputFields() {
     }
     let br = document.createElement("BR")
     document.getElementById("Enter").appendChild(br)
+    document.getElementsByClassName("container2").setAttribute("clor","white");
     pass()
 }
 
