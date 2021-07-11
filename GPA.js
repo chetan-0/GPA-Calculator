@@ -1,7 +1,6 @@
 function createInputFields() {
     let n = document.getElementById("n").value;
     document.getElementById("Enter").innerHTML = "<h1 class = 'heading-1'>Enter Subjects and Credits</h1>"
-    
     for (let i = 1; i <= n; i++) {
         let list = document.createElement("SELECT")
         list.setAttribute("id", "list" + i)
