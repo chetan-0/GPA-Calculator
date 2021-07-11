@@ -127,7 +127,6 @@ function createInputFields() {
     }
     let br = document.createElement("BR")
     document.getElementById("Enter").appendChild(br)
-    document.getElementsByClassName("container2").setAttribute("clor","white");
     pass()
 }
 
